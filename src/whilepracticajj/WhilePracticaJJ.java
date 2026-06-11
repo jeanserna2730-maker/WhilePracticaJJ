@@ -10,6 +10,7 @@ package whilepracticajj;
  */
 
 import java.util.Scanner;
+
 public class WhilePracticaJJ {
 
     /**
@@ -22,7 +23,7 @@ public class WhilePracticaJJ {
         do {
             System.out.println("1.suma");
             System.out.println("2.resta");
-            System.out.println("ingrese una opcion");
+            System.out.println("ingrese una opcion:");
             
             opcion = sc.nextInt();
             
@@ -48,6 +49,8 @@ public class WhilePracticaJJ {
                                             CAJERO AUTOMATICO
                            """);
         int clave = 1234;
+        int intentos = 3;
+        while (intentos > 0 && intentos<=3){
         System.out.println("Ingrese su tarjeta:");
         System.out.println("Tarjeta detectada");
         System.out.println("Ingresa tu clave:");
@@ -64,8 +67,14 @@ public class WhilePracticaJJ {
             System.out.println("3. depositar dinero");
             System.out.println("4. salir");
         }else{
-        
-        
+            System.out.println("Si la clave es incorrecta:");
+            intentos = -1;
+            System.out.println("Te quedan" + intentos);
+            
+            }
+        if (intentos == 0){
+            System.out.println("Haz superado los 3 intentos..., ¿Eres Mongolo?");
         }
-    }
+        }
+    } 
 }
