@@ -8,6 +8,7 @@ package whilepracticajj;
  *
  * @author el_ingeniero
  */
+
 import java.util.Scanner;
 public class WhilePracticaJJ {
 
@@ -16,7 +17,7 @@ public class WhilePracticaJJ {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("practica con github y ciclo hile");
+        System.out.println("Practica con github y ciclo hile");
         int opcion;
         do {
             System.out.println("1.suma");
@@ -40,14 +41,31 @@ public class WhilePracticaJJ {
         } while (opcion <=3);
     }
     public static void cajero_automatico(){
+        Scanner scc = new Scanner(System.in);
     //Algoritmo para simular cajero automatico
         System.out.println("""
                            -----------------------------------------------------
                                             CAJERO AUTOMATICO
                            """);
+        int clave = 1234;
         System.out.println("Ingrese su tarjeta:");
         System.out.println("Tarjeta detectada");
         System.out.println("Ingresa tu clave:");
-        int clave = sc.nextint();
+        int clave_ingresada = scc.nextInt();
+        if (clave_ingresada ==clave){
+        //Si la clave coincide
+            System.out.println("""
+                               -----------------------------------------------------
+                                               BIENVENIDO AL CAJERO
+                               """);
+            System.out.println("Selecciona una opcion:");
+            System.out.println("1. consultar saldo");
+            System.out.println("2. retirar dinero");
+            System.out.println("3. depositar dinero");
+            System.out.println("4. salir");
+        }else{
+        
+        
+        }
     }
 }
