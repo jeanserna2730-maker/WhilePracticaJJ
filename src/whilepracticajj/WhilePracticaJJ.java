@@ -79,5 +79,6 @@ public static void cajero_automatico() {
      public static void consultar_saldo(){
          double saldo = 1000;
          System.out.println("Saldo disponible: "+saldo);
+         System.out.println("prueba");
  }
 }
